@@ -22,8 +22,8 @@ function App() {
   return (
     <div className="container">
       <p className="day-date">
-        {days[date.getDay()]} {("0" + date.getDay()).slice(-2)}/
-        {("0" + (date.getMonth() + 1)).slice(-2)}/{date.getFullYear()}
+        {days[date.getDay()]} {("0" + (date.getMonth() + 1)).slice(-2)}/
+        {("0" + date.getDate()).slice(-2)}/{date.getFullYear()}
       </p>
       <p className="clock">
         {("0" + date.getHours()).slice(-2)}:
